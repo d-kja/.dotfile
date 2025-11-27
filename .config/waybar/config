@@ -1,0 +1,91 @@
+{
+	"layer": "top",
+	"position": "top",
+	"reload_style_on_change": true,
+
+  "output": "DP-3",
+		
+	"height":20,
+	"margin-top": 4,
+	"margin-bottom": 2,
+	"margin-left": 4,
+	"margin-right":4,
+	
+	"modules-left":["hyprland/workspaces"],
+	"modules-center":["clock"],
+	"modules-right":[
+    "tray",
+		"idle_inhibitor",
+		"network",
+		"wireplumber",
+		"clock#time",
+	],
+
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10,
+  },
+		
+	"hyprland/workspaces": {
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "❍",
+      "2": "❍",
+      "3": "❍",
+      "4": "❍ ",
+      "5": "❍",
+      "6": "❍",
+      "7": "❍",
+      "8": "❍",
+      "9": "❍",
+      "10": "❍",
+    },
+    "on-scroll-up": "hyprctl dispatch workspace e+1 1>/dev/null",
+    "on-scroll-down": "hyprctl dispatch workspace e-1 1>/dev/null",
+    "sort-by-number": true,
+    "active-only": false,
+  },
+  
+  "idle_inhibitor": {
+      "format": "{icon}",
+      "format-icons": {
+          "activated": "☀",
+          "deactivated": "⚬"
+      },
+      "tooltip": "true"
+  },
+	
+  "wireplumber": {
+    "on-click": "alacritty -e wiremix",
+    "on-click-right": "alacritty -e wiremix",
+    "format": " <span foreground='#e5c76b'>{icon}</span>  {volume}%",
+    "format-muted": "<span foreground='#e5c76b'></span>  Muted",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+	    "car": " ",
+	    "default": ["", "", ""]
+	  },
+	},
+      
+  "network": {
+    "format-wifi": "<span color='#67b0e8'></span>   {essid}  ",
+    "format-ethernet": "<span color='#67b0e8'></span>",
+    "format-linked": "<span color='#67b0e8'></span>  {ifname} (No IP)",
+    "format": "<span color='#67b0e8'></span>  Connected",
+    "format-disconnected": "<span color='#67b0e8'></span>  Disconnected",
+    "interval": 60,
+  },
+
+  "clock": {
+    "format": "<span color='#ee5396'></span>  {:%a %e  -  %R %p}"
+  },
+
+  "clock#time": {
+    "format": "<span color='#e57474'></span>  {:%H:%M}"
+  },
+}
