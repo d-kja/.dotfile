@@ -12,9 +12,6 @@ base_height="$(hyprctl monitors | grep $monitor -A1 | grep -oP '[0-9]{4}x[0-9]{4
 width="$((base_width * 2))"
 height="$((base_height * 2))"
 
-echo $width
-echo $height
-
 # Convert video (mp4) into gif
 ffmpeg -i "$file" -f yuv4mpegpipe - | gifski --fps 10 -W "$width" -H "$height" -o "$reference_path" -
 
