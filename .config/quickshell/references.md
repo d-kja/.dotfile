@@ -1,0 +1,14 @@
+# References
+
+## Documentation
+
+- [Quickshell](https://quickshell.org/docs/v0.1.0/types/Quickshell/)
+
+## Dots / Examples
+
+- [Quickshell Examples](https://git.outfoxxed.me/quickshell/quickshell-examples)
+
+- [End-4](https://github.com/end-4/dots-hyprland)
+- [Xanazf](https://github.com/Xanazf/quickshell_config)
+- [Caelestia-dots](https://github.com/caelestia-dots/shell)
+
