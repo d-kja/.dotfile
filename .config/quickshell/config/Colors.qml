@@ -1,15 +1,14 @@
-pragma ComponentBehavior: Bound
-import Quickshell.Io
+import QtQuick
 
 /*
  * INFO: Base colors
  *
  * You can updated this object to reflect the rest of the application
  **/
-JsonObject {
+QtObject {
   id: colors_root
 
-  component Background: JsonObject {
+  readonly property QtObject background: QtObject {
     readonly property string primary: color.zinc_950
     readonly property string primary_foreground: color.zinc_100
 
@@ -20,7 +19,7 @@ JsonObject {
     readonly property string accent_foreground: color.indigo_300
   }
 
-  component Border: JsonObject {
+  readonly property QtObject border: QtObject {
     readonly property string primary: color.zinc_800
     readonly property string primary_foreground: color.zinc_200
 
@@ -31,7 +30,7 @@ JsonObject {
     readonly property string accent_foreground: color.indigo_300
   }
 
-  component Text: JsonObject {
+  readonly property QtObject text: QtObject {
     readonly property string primary: color.zinc_100
     readonly property string primary_foreground: color.zinc_950
 
@@ -42,7 +41,7 @@ JsonObject {
   /*
    * INFO: You can use tailwind as a reference: https://tailscan.com/colors
    **/
-  property JsonObject colors: JsonObject {
+  readonly property QtObject colors: QtObject {
     id: color
 
     readonly property string zinc_50: "#fafafa"

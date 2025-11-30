@@ -5,7 +5,7 @@
 import Quickshell
 import QtQuick
 
-import "components"
+import "./components/Bar"
 
 ShellRoot {
     id: root

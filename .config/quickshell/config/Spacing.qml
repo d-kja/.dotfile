@@ -1,5 +1,7 @@
 pragma ComponentBehavior: Bound
+
 import Quickshell.Io
+import QtQuick
 
 JsonObject {
   id: spacing_root
@@ -30,7 +32,7 @@ JsonObject {
     readonly property real xl: spacing_reference.xl
   }
 
-  readonly property JsonObject rouding: JsonObject {
+  readonly property JsonObject rounding: JsonObject {
     id: rounding_reference
 
     readonly property int sm: 2
