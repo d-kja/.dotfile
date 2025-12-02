@@ -1,36 +1,33 @@
-##
-# AMD GPU
-##
-
-set --export AMD_VULKAN_ICD RADV
-# set --export VK_ICD_FILENAMES "/usr/share/vulkan/icd.d/radeon_icd.x86_64.json"
-
-#=-                                                             -=#
-
-function fish_prompt -d "Write out the prompt"
-    printf '%s@%s %s%s%s > ' $USER $hostname \
-        (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
-end
-
-if not status is-interactive
-    return 0 
-end
-
 #=-                                                             -=#
 
 ##
 # SETUP
 ##
 
+# GREETING
 function fish_greeting
     fastfetch
 end
 
-# Update done.fish
+# UPDATE DONE.FISH
 set -U __done_min_cmd_duration 10000
 set -U __done_notification_urgency_level low
 
-#=-
+# AMD GPU
+set --export AMD_VULKAN_ICD RADV
+# set --export VK_ICD_FILENAMES "/usr/share/vulkan/icd.d/radeon_icd.x86_64.json" # (Not required, but could be useful if you're using multiple drivers.)
+
+function fish_prompt -d "Write out the prompt"
+    printf '%s@%s %s%s%s > ' $USER $hostname \
+        (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
+end
+
+# Early return
+if not status is-interactive
+    return 0 
+end
+
+#=-                                                             -=#
 
 ##
 # ALIASES
@@ -75,7 +72,7 @@ alias set-wallpaper="mpvpaper -o \"no-audio --panscan=1.0 --loop-playlist\" ALL"
 
 alias ryujinx="$HOME/.local/share/ryujinx/Ryujinx.sh"
 
-#=-
+#=-                                                             -=#
 
 ##
 # PATHS
@@ -109,7 +106,7 @@ set --export PATH $BUN_INSTALL/bin $PATH
 set PYENV_ROOT "$HOME/.pyenv"
 set --export PATH $PYENV_ROOT/bin $PATH
 
-#=-
+#=-                                                             -=#
 
 ##
 # BINARIES
@@ -127,6 +124,8 @@ zoxide init fish --cmd cd | source
 # PYTHON (Trash that I'm forced to use along with poetry...)
 pyenv init - | source
 
+
+# Forgor
 if test -f ~/.local/state/quickshell/user/generated/terminal/sequences.txt
     cat ~/.local/state/quickshell/user/generated/terminal/sequences.txt
 end
