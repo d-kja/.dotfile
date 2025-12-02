@@ -1,9 +1,9 @@
 #!/bin/bash
 
 echo "Killing search"
-pkill vicinae
+pkill hyprshell
 sleep 1
 
 echo "Starting server"
-vicinae server
+hyprshell run &
 
