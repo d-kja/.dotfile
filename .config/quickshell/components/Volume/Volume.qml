@@ -5,8 +5,9 @@ import Quickshell
 import Quickshell.Services.Pipewire
 import Quickshell.Widgets
 
-import "../../config"
 import "../Shards"
+import "../../config"
+import "../../config/Presets"
 
 Scope {
   id: root
@@ -19,7 +20,7 @@ Scope {
   }
 
   Connections {
-    target: Pipewire.defaultAudioSink?.audio 
+    target: Pipewire.defaultAudioSink?.audio
 
     // Volume change signal
     function onVolumeChanged() {
@@ -44,7 +45,7 @@ Scope {
       // WARN: Prevent the window from blocking mouse events
       mask: Region {}
 
-      margins.top: screen.height / 5
+      margins.top: screen.height / 4
       anchors {
         right: true
         top: true
@@ -64,6 +65,7 @@ Scope {
         implicitWidth: 54
 
         y: root.size
+        x: 50
 
         topLeftRadius: Config.spacing.rounding.xl * 4
         bottomLeftRadius: Config.spacing.rounding.xl * 4
@@ -151,7 +153,7 @@ Scope {
         corner: RoundedCorner.CornerEnum.BOTTOM_RIGHT
         size: root.size
 
-        x: panel.implicitWidth - size
+        x: 50
         y: 0
       }
 
@@ -161,8 +163,45 @@ Scope {
         corner: RoundedCorner.CornerEnum.TOP_RIGHT
         size: root.size
 
-        x: panel.implicitWidth - size
+        x: 50 
         y: panel.implicitHeight - size
+      }
+
+      // Sliding animation with lazy loader (child).
+      BaseAnimation {
+        id: sliding_animation
+        target: child
+
+        // Update X Axis
+        property: "x"
+        to: 0
+      }
+
+      // Sliding animation with lazy loader (top corner).
+      BaseAnimation {
+        id: sliding_animation_top_corner
+        target: top_corner
+
+        // Update X Axis
+        property: "x"
+        to: panel.implicitWidth - top_corner.size
+      }
+
+      // Sliding animation with lazy loader (bottom corner).
+      BaseAnimation {
+        id: sliding_animation_bottom_corner
+        target: bottom_corner
+
+        // Update X Axis
+        property: "x"
+        to: panel.implicitWidth - bottom_corner.size
+      }
+
+      // Trigger duplicated animations...
+      Component.onCompleted: {
+        sliding_animation.start();
+        sliding_animation_top_corner.start();
+        sliding_animation_bottom_corner.start();
       }
     }
   }

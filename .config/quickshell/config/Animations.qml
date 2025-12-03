@@ -1,6 +1,6 @@
 pragma ComponentBehavior: Bound
 import QtQuick
- 
+
 QtObject {
   id: animation_root
 
@@ -27,5 +27,18 @@ QtObject {
     property int base: 400
     property int lg: 600
     property int xl: 1000
+  }
+
+  readonly property QtObject velocity: QtObject {
+    property int base: 500
+  }
+
+  readonly property QtObject presets: QtObject {
+    property QtObject base: QtObject {
+      property int type: Easing.BezierSpline
+      property list<real> bezierCurve: animation_root.curves.base
+      property int duration: animation_root.durations.base
+      property int velocity: animation_root.velocity.base
+    }
   }
 }
