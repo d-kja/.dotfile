@@ -29,6 +29,10 @@
 !.config/wireplumber/wireplumber.conf.d/
 !.config/wireplumber/wireplumber.conf.d/*
 
+.config/xdg-desktop-portal/*
+!.config/xdg-desktop-portal
+!.config/xdg-desktop-portal/portals.conf
+
 !.config/starship.toml
 !.config/mimeapps.list
 !.config/pavucontrol.ini
