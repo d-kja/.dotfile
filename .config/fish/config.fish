@@ -96,6 +96,9 @@ alias ryujinx="$HOME/.local/share/ryujinx/Ryujinx.sh"
 set PATH $PATH $HOME/.local/bin
 set PATH $PATH $HOME/.config/hypr/scripts
 
+# LINKS
+# set --export LD_LIBRARY_PATH $LD_LIBRARY_PATH "/usr/local/lib"
+
 # DOCKER
 set DOCKER_HOST "unix://$XDG_RUNTIME_DIR/docker.sock"
 
