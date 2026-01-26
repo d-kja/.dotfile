@@ -1,7 +1,0 @@
-module quickshell.config
-
-import qs.core.config
-import qs.core.services
-import qs.lib.base
-import qs.lib.controls
-import qs.modules.bar
