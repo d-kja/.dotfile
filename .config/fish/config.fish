@@ -80,6 +80,8 @@ alias lat="laterem"
 alias mixer="wiremix"
 alias sp="spotify_player"
 
+alias why="witr"
+
 alias wineenv="cat /proc/\"$(pgrep -fl wineserver | awk '{print $1}')\"/environ | tr '\0' '\n' | grep -i wine"
 alias hyprconf="nvim $HOME/.config/hypr"
 alias set-wallpaper="mpvpaper -o \"no-audio --panscan=1.0 --loop-playlist\" ALL"
