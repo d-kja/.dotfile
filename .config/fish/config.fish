@@ -19,6 +19,13 @@ set -U __done_notification_urgency_level low
 set --export AMD_VULKAN_ICD RADV
 # set --export VK_ICD_FILENAMES "/usr/share/vulkan/icd.d/radeon_icd.x86_64.json" # (Not required, but could be useful if you're using multiple drivers.)
 
+set --export HSA_OVERRIDE_GFX_VERSION "11.0.0"
+set --export TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL "1"
+set --export GPU_MAX_ALLOC_PERCENT 100
+set --export GPU_MAX_HEAP_SIZE 100
+
+#=-                                                             -=#
+
 function fish_prompt -d "Write out the prompt"
     printf '%s@%s %s%s%s > ' $USER $hostname \
         (set_color $fish_color_cwd) (prompt_pwd) (set_color normal)
