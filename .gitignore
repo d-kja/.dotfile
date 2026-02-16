@@ -139,7 +139,12 @@
 !.local/share/fonts/Mononoki/
 !.local/share/fonts/NotoSansCJK/
 
+.local/share/easyeffects/*
+.local/share/easyeffects/output/*
 
+!.local/share/easyeffects/
+!.local/share/easyeffects/output/
+!.local/share/easyeffects/output/*.json
 
 
 
