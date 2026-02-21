@@ -539,10 +539,10 @@
         "plugins_order": [
             "filter#0",
             "bass_enhancer#0",
+            "autogain#0",
             "multiband_compressor#0",
             "stereo_tools#0",
             "equalizer#0",
-            "autogain#0",
             "limiter#0"
         ],
         "stereo_tools#0": {
