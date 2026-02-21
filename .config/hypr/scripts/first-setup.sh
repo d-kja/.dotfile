@@ -19,7 +19,7 @@ Description=Prepare system for real-time audio
 
 [Service]
 Type=oneshot
-ExecStart=/bin/bash /usr/local/bin/rt-audio-setup
+ExecStart=sudo /bin/bash /usr/local/bin/rt-audio-setup
 RemainAfterExit=yes
 
 [Install]
