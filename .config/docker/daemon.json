@@ -1,4 +1,4 @@
 {
-  "iptables": false,
-  "ip6tables": false
+  "iptables": true,
+  "ip6tables": true
 }
