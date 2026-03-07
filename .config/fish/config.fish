@@ -7,7 +7,7 @@
 # GREETING
 function fish_greeting
     fastfetch
-    mommy # Yes.
+    mommy # Yes...
     echo ""
 end
 
