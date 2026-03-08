@@ -1,6 +1,8 @@
 # Linux Dotfiles
 
-> Just another generic Arch Linux rice with Hyprland
+> This is just a generic rice, and I use to keep track of my changes. Don't expect anything fancy, it's just a simple configuration for my own workflow.
+>
+> I don't recommend anyone using this besides me and if you like something from this config, you can just copy and paste instead.
 
 ## Overview
 
