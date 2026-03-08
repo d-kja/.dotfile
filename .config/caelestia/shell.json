@@ -541,7 +541,7 @@
   "services": {
     "weatherLocation": "",
     "useFahrenheit": false,
-    "useFahrenheitPerformance": true,
+    "useFahrenheitPerformance": false,
     "useTwelveHourClock": false,
     "gpuType": "",
     "visualiserBars": 45,
