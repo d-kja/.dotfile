@@ -88,6 +88,7 @@ alias mixer="wiremix"
 alias sp="spotify_player"
 
 alias why="witr"
+alias bright="set-brightness.sh"
 
 alias wineenv="cat /proc/\"$(pgrep -fl wineserver | awk '{print $1}')\"/environ | tr '\0' '\n' | grep -i wine"
 alias hyprconf="nvim $HOME/.config/hypr"
