@@ -98,7 +98,7 @@
   },
   "background": {
     "enabled": false,
-    "wallpaperEnabled": true,
+    "wallpaperEnabled": false,
     "desktopClock": {
       "enabled": false,
       "scale": 1,
@@ -138,13 +138,13 @@
       "statusIcons": true
     },
     "workspaces": {
-      "shown": 4,
+      "shown": 3,
       "activeIndicator": true,
       "occupiedBg": false,
       "showWindows": false,
       "showWindowsOnSpecialWorkspaces": false,
       "activeTrail": false,
-      "perMonitorWorkspaces": true,
+      "perMonitorWorkspaces": false,
       "label": "  ",
       "occupiedLabel": "󰮯",
       "activeLabel": "󰮯",
@@ -251,7 +251,7 @@
     }
   },
   "launcher": {
-    "enabled": true,
+    "enabled": false,
     "showOnHover": false,
     "maxShown": 7,
     "maxWallpapers": 9,
