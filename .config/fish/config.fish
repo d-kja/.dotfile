@@ -135,6 +135,15 @@ set --export DOTNET_ROOT "$HOME/.dotnet"
 set PATH $PATH "$DOTNET_ROOT"
 set PATH $PATH "$DOTNET_ROOT/tools"
 
+# ANDROID
+
+set --export ANDROID_HOME "/opt/android-sdk"
+set --export ANDROID_SDK_ROOT "/opt/android-sdk"
+
+set PATH $PATH "$ANDROID_HOME/emulator"
+set PATH $PATH "$ANDROID_HOME/platform-tools"
+set PATH $PATH "$ANDROID_HOME/cmdline-tools/latest/bin"
+
 #=-                                                             -=#
 
 ##
