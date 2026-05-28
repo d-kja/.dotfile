@@ -24,6 +24,9 @@ set --export TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL "1"
 set --export GPU_MAX_ALLOC_PERCENT 100
 set --export GPU_MAX_HEAP_SIZE 100
 
+set --export MESA_SHADER_CACHE_DISABLE true
+set --export MESA_GLSL_CACHE_DISABLE true
+
 #=-                                                             -=#
 
 function fish_prompt -d "Write out the prompt"
