@@ -166,7 +166,8 @@ fc-cache -fv
 
 Enable amd gpu recovery if you're using amd, it might be useful if you're using a high end gpu
 ```bash
-amggpu.gpu_recovery=1
+# Append to options
+amdgpu.ppfeaturemask=0xffffffff amdgpu.gpu_recovery=1
 ```
 
 ## System Configuration
