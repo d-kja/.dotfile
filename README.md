@@ -164,6 +164,11 @@ mv [repository]/.config/fish ~/.config/
 fc-cache -fv
 ```
 
+Enable amd gpu recovery if you're using amd, it might be useful if you're using a high end gpu
+```bash
+amggpu.gpu_recovery=1
+```
+
 ## System Configuration
 
 ### Recommended Setup
