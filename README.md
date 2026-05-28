@@ -170,6 +170,11 @@ Enable amd gpu recovery if you're using amd, it might be useful if you're using 
 amdgpu.ppfeaturemask=0xffffffff amdgpu.gpu_recovery=1
 ```
 
+You can also disable gfx if you aren't using a daisy chain to power you GPU. This will help if you GPU crashes because of power state bug
+```bash
+amdgpu.gfx_off=0
+```
+
 ## System Configuration
 
 ### Recommended Setup
