@@ -59,3 +59,8 @@ yellow = "#eed49f"
 [colors.primary]
 background = "#1e1e2e"
 foreground = "#b4befe"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001B\r"
