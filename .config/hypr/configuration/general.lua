@@ -109,18 +109,23 @@ hl.config({
         zoom_rigid = false,
     },
 
-    -- Overview
-    plugin = {
-        hyprexpo = {
-            columns = 3,
-            gap_size = 5,
-            bg_col = "rgb(000000)",
-            workspace_method = "first 1", -- [center/first] [workspace] e.g. first 1 or center m+1
-
-            enable_gesture = false, -- laptop touchpad, 4 fingers
-        },
-    },
 })
+
+-- Overview
+if hl.plugin.hyprexpo ~= nil then
+    hl.config({
+        plugin = {
+            hyprexpo = {
+                columns = 3,
+                gap_size = 5,
+                bg_col = "rgb(000000)",
+                workspace_method = "first 1", -- [center/first] [workspace] e.g. first 1 or center m+1
+
+                enable_gesture = false, -- laptop touchpad, 4 fingers
+            },
+        },
+    })
+end
 
 -- Curves
 hl.curve("expressiveFastSpatial", { type = "bezier", points = { { 0.42, 1.67 }, { 0.21, 0.90 } } })
