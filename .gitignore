@@ -76,9 +76,15 @@
 
 .config/hypr/*
 !.config/hypr/
+!.config/hypr/hyprland.lua
+!.config/hypr/hypridle.conf
+!.config/hypr/hyprlock.conf
+!.config/hypr/xdph.conf
 !.config/hypr/assets/
 !.config/hypr/configuration/
 !.config/hypr/hyprlock/
+!.config/hypr/scheme/
+!.config/hypr/scheme/current.conf
 !.config/hypr/scripts/
 !.config/hypr/shaders/
 
