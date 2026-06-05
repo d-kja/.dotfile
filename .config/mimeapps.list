@@ -18,6 +18,7 @@ application/pdf=firefox.desktop
 image/webp=qimgv.desktop
 application/x-gnome-saved-search=nemo.desktop
 x-scheme-handler/stabilitymatrix=stabilitymatrix.desktop
+x-scheme-handler/acmanager=Assetto Corsa.desktop
 
 [Added Associations]
 x-scheme-handler/http=firefox.desktop;
@@ -35,3 +36,4 @@ image/png=qimgv.desktop;
 image/jpeg=qimgv.desktop;
 application/pdf=librewolf.desktop;firefox.desktop;
 image/webp=qimgv.desktop;
+x-scheme-handler/acmanager=Assetto Corsa.desktop;
