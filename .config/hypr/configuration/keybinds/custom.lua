@@ -19,7 +19,7 @@ return function(vars)
     -- hl.bind("CTRL + SHIFT + P", hl.dsp.exec_cmd("pkill waybar || waybar"))
 
     -- Toggle window
-    hl.bind("ALT + Tab", hl.dsp.exec_cmd("vicinae vicinae://extensions/vicinae/wm/switch-windows"))
+    hl.bind("ALT + Tab", hl.dsp.exec_cmd("vicinae vicinae://launch/wm/switch-windows"))
 
     hl.bind(WKEY .. " + SHIFT + R", hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/reset.sh"))
 
@@ -31,10 +31,10 @@ return function(vars)
     hl.bind("CTRL + SHIFT + Delete", hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/screenshot-edit.sh"))
     hl.bind("CTRL + Delete", hl.dsp.exec_cmd("$HOME/.config/hypr/scripts/screenshot.sh"))
 
-    hl.bind(WKEY .. " + V", hl.dsp.exec_cmd("vicinae vicinae://extensions/vicinae/clipboard/history"))
+    hl.bind(WKEY .. " + V", hl.dsp.exec_cmd("vicinae vicinae://launch/clipboard/history"))
     hl.bind("CTRL + " .. WKEY .. " + C", hl.dsp.exec_cmd("hyprpicker -a")) -- Pick color (Hex) >> clipboard
 
-    hl.bind(WKEY .. " + Period", hl.dsp.exec_cmd("vicinae vicinae://extensions/vicinae/core/search-emojis"))
+    hl.bind(WKEY .. " + Period", hl.dsp.exec_cmd("vicinae vicinae://launch/core/search-emojis"))
 
     -- Close window
     hl.bind(WKEY .. " + SHIFT + Q", hl.dsp.window.close()) -- Close
