@@ -128,7 +128,7 @@ hl.window_rule({ name = "windowrule-44-zapzap-lower", match = { class = [[zapzap
 -- Firefox (avoid leaking anything during work hours lol)
 -- hl.window_rule({ name = "windowrule-45", match = { class = [[firefox]] }, no_screen_share = true })
 
-hl.window_rule({ name = "windowrule-46", match = { class = [[^tempus$]], title = [[^Tempus$]] }, float = true, pin = true, move = { "monitor_w - 320 - 12", 12 }, border_size = 0, no_shadow = true, rounding = 20 })
+hl.window_rule({ name = "windowrule-46", match = { class = [[^tempus$]], title = [[^Tempus$]] }, float = true, pin = true, move = { "monitor_w - 260", 16 }, border_size = 0, no_shadow = true, rounding = 20 })
 hl.window_rule({ name = "windowrule-47", match = { class = [[^tempus$]], title = [[^Settings$]] }, float = true, center = true })
 
 -- Workspace rules
