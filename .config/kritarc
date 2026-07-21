@@ -44,9 +44,10 @@ Krita/Ocio/OcioConfigPath=
 Krita/Ocio/OcioLockColorVisualRepresentation=false
 Krita/Ocio/OcioLutPath=
 Krita/Ocio/UseOcio=false
-LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB b="0.124396860599518" g="0.0636171922087669" space="sRGB-elle-V2-g10.icc" r="0.0410042144358158"/>\n</LastBackGroundColor>\n
+LastBackGroundColor=<!DOCTYPE LastBackGroundColor>\n<LastBackGroundColor>\n <RGB b="0.124391548335552" g="0.0636148601770401" r="0.0410009920597076" space="sRGB-elle-V2-g10.icc"/>\n</LastBackGroundColor>\n
+LastColorHistory=<!DOCTYPE LastColorHistory>\n<colors/>\n
 LastEraser_-1=b) Basic-5 Size Opacity
-LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB b="0.211017236113548" g="0.144894763827324" space="sRGB-elle-V2-g10.icc" r="0.171451196074486"/>\n</LastForeGroundColor>\n
+LastForeGroundColor=<!DOCTYPE LastForeGroundColor>\n<LastForeGroundColor>\n <RGB b="0.21101701259613" g="0.144899666309357" r="0.17145037651062" space="sRGB-elle-V2-g10.icc"/>\n</LastForeGroundColor>\n
 LastPreset=b) Basic-5 Size Opacity
 LastPreset_-1=a) Eraser Circle
 LineSmoothingDelayDistance=50
@@ -244,6 +245,7 @@ popuppalette/size=385
 popuppalette/useDynamicSlotCount=true
 popuppalette/usevisualcolorselector=false
 presetChooserViewMode=0
+presetStripVisible=true
 presethistory=Awez Flat Standard Rotating,d) Ink-3 Gpen Copier,c) Pencil-2,Line mangatest,b) Basic-5 Size Opacity,f) Bristles-2 Flat Rough,b) Basic-6 Details,b) Airbrush Soft,a) Eraser Circle,b) Basic-5 Size
 renameMergedLayers=true
 renamePastedLayers=true
@@ -272,6 +274,7 @@ toolbarslider_1=opacity
 toolbarslider_2=size
 toolbarslider_3=flow
 toolbarslider_4=flow
+toolbarslider_5=flow
 touchPainting=0
 undoStackLimit=200
 useAnimationCacheFrameSizeLimit=true
@@ -661,11 +664,14 @@ Current Scheme=clip_studio_paint_compatible
 
 [SvgSymbolCollection]
 currentCollection=0
+displayThumbnails=false
+iconSize=20
 
 [advancedColorSelector]
 colorSelectorConfiguration=1|0|6|0
 customSelectorBackgroundColor=160,160,164
 gamma=2.2
+lastUsedColorsPerDocument=false
 lumaG=0.7152
 lumaR=0.2126
 minimalShadeSelectorLineConfig=0|0.2|0|0|0|0|0;1|0|1|1|0|0|0;2|0|-1|1|0|0|0
