@@ -57,7 +57,7 @@ alias rmf="rm -rf"
 alias open="xdg-open"
 alias rand="openssl rand -base64 32"
 
-alias ls 'eza --icons'
+alias ls 'eza --icons auto'
 alias pamcan pacman # Skill issue 101
 alias clear "printf '\033[2J\033[3J\033[1;1H'"
 
