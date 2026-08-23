@@ -1,7 +1,7 @@
 {
     "output": {
         "autogain#0": {
-            "bypass": false,
+            "bypass": true,
             "force-silence": false,
             "input-gain": 0.0,
             "maximum-history": 15,
@@ -25,6 +25,7 @@
         "equalizer#0": {
             "balance": 0.0,
             "bypass": false,
+            "decramp": "Off",
             "input-gain": 0.0,
             "left": {
                 "band0": {
@@ -260,6 +261,7 @@
         "filter#0": {
             "balance": 0.0,
             "bypass": false,
+            "decramp": "Off",
             "equal-mode": "IIR",
             "frequency": 3200.0,
             "gain": 0.0,
